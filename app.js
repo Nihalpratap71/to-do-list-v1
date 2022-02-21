@@ -99,7 +99,7 @@ const Item = mongoose.model("Item", itemSchema)
 // route
 app.get("/",(req,res)=>{
   Item.find({},(err,result )=>{
-    if(!err){
+    if(!err){ 
       res.render("list",{
         result: result
       })
